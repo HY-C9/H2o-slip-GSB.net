@@ -415,7 +415,6 @@
         document.getElementById('datetime').value = now.toISOString().slice(0, 19);
         
         if(window.updateDisplay) window.updateDisplay();
-        alert('✨ ล้างข้อมูลกลับเป็นค่าเริ่มต้นเรียบร้อยแล้ว');
     };
 
     window.saveFavorite = function() {
@@ -460,7 +459,7 @@
             
             if(window.updateDisplay) window.updateDisplay();
         } else {
-            alert('⚠️ คุณยังไม่ได้บันทึกรายการโปรดไว้เลยครับ (กดปุ่ม "บันทึกโปรด" ก่อนนะ)');
+            alert('⚠️ ไม่มีรายการโปรด');
         }
     };
 </script>
